@@ -1,0 +1,150 @@
+.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background: #C78EFF ;
+    color: #fff;
+}
+.navbar-default {
+	 margin-bottom: 0px;
+     background: #F4E8FF;
+     border: 0px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #E8D2FF;
+    background: #B061FF;
+}
+.site-decription {
+	margin: 0px auto;
+	padding: 0px auto;
+}
+.logo-image {
+	margin: auto;
+	width: 50%;
+}
+.breadcrumb {
+	background-color: #F4E8FF;
+	color: #B061FF;
+}
+.breadcrumb li a{
+	color: #B061FF;
+}
+h2, h3 {
+	text-align: center;
+	color: #666;
+}
+h4 {
+	display: inline;
+	color: #666;
+}
+.header-link {
+	text-decoration: none;
+	color: #666;
+}
+.header-link:hover {
+	text-decoration: none;
+	color: #B061FF;
+}
+.footer-text {
+	text-align: center;
+	margin-top: 10px;
+}
+.active-task {
+	background-color: #CCFFCC;
+}
+.completed-task {
+	background-color: #DDBBFF;
+}
+.task-list {
+	margin: 0px auto;
+	color: #666;
+}
+.well {
+	text-align: center;
+}
+.well a:hover {
+	text-decoration: none;
+	color: #006600;
+}
+.task-details {
+	margin-top: 5px;
+}
+.task-details .well {
+	background-color: transparent;
+	border-color: transparent;
+	text-align: left;
+}
+.task-details a, 
+.task-details a:hover {
+	font-size: 150%;
+}
+.user-avatar {
+	width: 100%;
+}
+.task-date {
+	font-size: 150%;
+	font-style: bold;
+}
+.task-date .well {
+	text-align: center;
+}
+.task-name {
+	color: #B061FF;
+}
+.status-active {
+	display: inline;
+	margin-left: 10px;
+	padding: 5px 25px;
+	border-radius: 5px;
+	background-color: #CCFFCC;
+	color: #666;
+}
+.status-completed {
+	display: inline;
+	margin-left: 10px;
+	padding: 5px 25px;
+	border-radius: 5px;
+	background-color: #DDBBFF;
+	color: #666;
+}
+.description {
+	min-height: 350px;
+}
+.about-text {
+	text-align: left;
+}
+.about-image {
+	position: relative;
+	width: 100%;
+}
+.large-image {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 10;
+	/* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+#large_image {
+	height: 90%;
+	display: block;
+	margin: 25px auto;
+	opacity: 2.0;
+	border: 4px solid darkgray;
+}
+.highlighted-text {
+	background-color: #D2A5FF;
+}
+
+@media screen and (max-width: 650px) {
+   .developer-header {
+   	display: none;
+   }
+}
