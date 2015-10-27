@@ -66,6 +66,9 @@
 				<div class="row">
 					<div class="col-xs-12 col-md-8">
 						<p>On this page we use pictures to illustrate site's functionality. Some of them may be difficult to see due to its small sizes. For your convenience, we have added an additional function. If you want to see larger version of image with instructions, <span class="highlighted-text">just click on it</span>! To return to normal view, click on the large image and it will be hidden.</p>
+						<div class="alert alert-warning" role="alert">
+							<p>WARNING! This feature does not work on mobile devises! For using this function you must open this page on a device with screen width larger than 650px.</p>
+						</div>
 					</div>
 					<div class="col-xs-12 col-md-4">
 						<img src="images/large_img.png" class="about-image" alt="illustration of functionality">
@@ -73,7 +76,7 @@
 				</div>
 
 				<!-- mobile devices -->
-				<h4><hr>For mobile devises</h4>
+				<h4><hr>For mobile devices</h4>
 				<div class="row">
 					<div class="col-xs-12 col-md-8">
 						<p>You can use our site from your mobile devise with comfort. Its design will be adapted to your screen size without any problem! Just notice, that our site uses collapsed navigation for narrow screens.</p>
@@ -118,14 +121,19 @@
 
 	    <script type="text/javascript">
 	    	$(document).ready(function() {
-		    	$(".about-image").click(function() {
-		    		$(".large-image").show();
-		    		$("#large_image").attr('src', $(this).attr('src'));
-		    	});
+	    		if ($(window).width() > 650) {
+	    			// this function will not work for mobile devises
+	    			$(".about-image").click(function() {
+			    		$(".large-image").show();
+			    		$("#large_image").attr('src', $(this).attr('src'));
+			    	});
 
-		    	$("#large_image").click(function() {
-		    		$(".large-image").hide();
-		    	});
+			    	$("#large_image").click(function() {
+			    		$(".large-image").hide();
+			    	});
+	    		} else {
+	    			$(".alert-warning").show();
+	    		}
 	    	});
 	    </script>
 	</body>

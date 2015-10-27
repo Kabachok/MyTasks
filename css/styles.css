@@ -84,8 +84,6 @@ h4 {
 .task-date {
 	font-size: 150%;
 	font-style: bold;
-}
-.task-date .well {
 	text-align: center;
 }
 .task-name {
@@ -141,6 +139,9 @@ h4 {
 }
 .highlighted-text {
 	background-color: #D2A5FF;
+}
+.alert-warning {
+	display: none;
 }
 
 @media screen and (max-width: 650px) {
